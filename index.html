@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Gallardo Morales</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://kit.fontawesome.com/55150138ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <img src="img/logo.png" alt="logo">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="menu">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#proyects">Proyectos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <!-- <li><a href="#experience">Experiencia</a></li> -->
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><button class="menu-close" aria-label="Cerrar menú">&times;</button></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <h2 class="section__title-1">
+                    <span>Sobre mí</span>
+                </h2>
+
+                <div class="about__perfil">
+                    <div class="about__image">
+                        <img src="img/me.jpeg" alt="image" class="about__img">
+
+                        <div class="about__shadow"></div>
+
+                        <div class="geometric-box"></div>
+
+                        <div class="about__box"></div>
+                    </div>
+                </div>
+
+                <div class="about__info">
+                    <p class="about__description">
+                        Apasionado por crear <b>Páginas Web</b> como desarrollador
+                        <b>Full-Stack</b>, tengo dos años de experiencia y muchos clientes están satisfechos con los
+                        proyectos realizados.
+                    </p>
+
+                    <div class="about__buttons">
+                        <a href="#contact" class="button">
+                            <i class="ri-send-plane-line"></i> Contáctame
+                        </a>
+                        <a href="cv.pdf" class="button">
+                            CV <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="section__title-1">
+            <span>Proyectos</span>
+        </h2>
+        <section id="proyects">
+            <div class="card" id="calendario-card">
+                <img src="img/calendario-deportes.png" alt="">
+                <h2>Calendario deportivo</h2>
+                <p class="subtitle">Codeigniter 3, MySQL, FullCalendar.js</p>
+            </div>
+            <div class="card" id="ecommerce-card">
+                <img src="img/ecommerce.png" alt="">
+                <h2>E-commerce</h2>
+                <p class="subtitle">React JS, API</p>
+            </div>
+            <div class="card">
+                <img src="img/portfolio.png" alt="">
+                <h2>Portfolio</h2>
+                <p class="subtitle">HTML, CSS, JS, Highcharts.js</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section__title-1">
+                <span>Habilidades</span>
+            </h2>
+            <div id="frontendContainer" style="width: 50%; height: 400px; float: left;"></div>
+            <div id="backendContainer" style="width: 50%; height: 400px; float: left;"></div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section__title-1">
+                <span>Contáctame</span>
+            </h2>
+            <form action="" method="post">
+                <div>
+                    <label for="user">
+                        Nombre:
+                        <br>
+                        <input type="text" name="nombre">
+                    </label>
+                    <label for="pass">
+                        Correo electrónico:
+                        <br>
+                        <input type="email" name="email">
+                    </label>
+                    <label for="message">
+                        Mensaje:
+                        <br>
+                        <textarea name="mensaje"></textarea>
+                    </label>
+
+                    <input type="submit" value="Enviar">                    <p>Actualmente no funciona el formulario, por favor, hablame por RRSS</p>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 Alberto Gallardo</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/alberto-gallardo-morales-036005253/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AlbertoGallardoDev" target="_blank"><i class="fab fa-github"></i></a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/graficas.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="module" src="js/rutas.js"></script>
+</body>
+
+</html>
